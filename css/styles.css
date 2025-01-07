@@ -894,6 +894,7 @@ input[type="checkbox"] {
     #ffffff 50px,
     #ffffff 5%
   );
+display: flex;
 }
 
 .basic-1 h2,
@@ -912,7 +913,9 @@ p,
 .basic-1 .section-title {
   margin-bottom: 0.5rem;
 }
-
+.basic-1 .container .col-lg-7s{
+display: flexbox;
+}
 .basic-1 h2 {
   margin-bottom: 1.375rem;
 }
@@ -926,12 +929,16 @@ p,
   overflow: hidden;
   border-radius: 0.25rem;
   width: 250px;
+ align-items: center;
+ justify-content: center;
 }
 
 .basic-1 .image-container img {
   margin: 0;
   border-radius: 0.25rem;
   transition: all 0.3s;
+  align-items: center;
+  justify-content: center;
 }
 
 .basic-1 .image-container:hover img {
@@ -1033,6 +1040,7 @@ p,
     #e7e9f2 83.33%,
     #e7e8ee 100%
   );
+ 
 }
 
 .cards-2 .section-title {
@@ -1049,6 +1057,8 @@ p,
   margin-bottom: 5.625rem;
   border: none;
   background-color: transparent;
+  align-items: center;
+  justify-content: center;
 }
 
 .cards-2 .card-image img {
@@ -1057,6 +1067,8 @@ p,
   border-top-right-radius: 0.375rem;
   margin-bottom: 25px;
   width: 300px;
+  align-items: center;
+  justify-content: center;
 }
 
 .cards-2 .card-body {
@@ -2076,7 +2088,7 @@ a:hover.back-to-top {
   .cards-2 .card {
     max-width: 18.25rem;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: baseline;
     margin-bottom: 0;
   }
 
