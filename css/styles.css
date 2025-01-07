@@ -189,7 +189,7 @@ strong {
   display: flex;
   align-items: center;
   justify-self: center;
- margin-bottom: 25px;
+  margin-bottom: 25px;
   padding: 1.1875rem 1.875rem 1.1875rem 1.875rem;
   border: 0.125rem solid #1739e4;
   border-radius: 1.5rem;
@@ -198,7 +198,6 @@ strong {
   font: 700 0.75rem/0 "Montserrat", sans-serif;
   text-decoration: none;
   transition: all 0.9s;
-
 }
 
 .btn-outline-reg:hover {
@@ -397,9 +396,9 @@ input[type="checkbox"] {
   display: inline-block;
   width: 50%;
   height: 3.125rem;
-  border: 0.125rem solid #e41717;
+  border: 0.125rem solid #dc9209;
   border-radius: 0.25rem;
-  background-color: #e41717;
+  background-color: #dc9209;
   color: #fff;
   font: 700 0.75rem/1.75rem "Montserrat", sans-serif;
   cursor: pointer;
@@ -414,6 +413,7 @@ input[type="checkbox"] {
 .form-control-submit-button:hover {
   background-color: transparent;
   color: #000;
+  transition: 1s all ease-out;
 }
 
 /* Form Success And Error Message Formatting */
@@ -425,12 +425,12 @@ input[type="checkbox"] {
 #pmsgSubmit.h3.text-center {
   display: block;
   margin-bottom: 0;
-  color: #b93636;
+  color: #0418a0;
   font: 400 1.125rem/1rem "Open Sans", sans-serif;
 }
 
 .help-block.with-errors .list-unstyled {
-  color: #0c85ba;
+  color: #0c46ba;
   font-size: 0.75rem;
   line-height: 1.125rem;
   text-align: left;
@@ -779,7 +779,6 @@ input[type="checkbox"] {
   border: none;
   border-radius: 0.25rem;
   background-color: #bfa50fd9;
-  
 }
 
 .navbar-custom .dropdown-item {
@@ -887,14 +886,15 @@ input[type="checkbox"] {
 .basic-1 {
   padding-top: 6.5rem;
   padding-bottom: 3rem;
-  background-image: radial-gradient(
-    circle at 50% -20.71%,
-    #4a73f9a9 40%,
-    #ffffff 80%,
-    #ffffff 50px,
-    #ffffff 5%
+
+  background: linear-gradient(
+    to bottom,
+    #000000 0%,
+    #a8a6a5 25%,
+    #d2d3d2 50%,
+    #ffffff 100%
   );
-display: flex;
+  display: flex;
 }
 
 .basic-1 h2,
@@ -913,8 +913,8 @@ p,
 .basic-1 .section-title {
   margin-bottom: 0.5rem;
 }
-.basic-1 .container .col-lg-7s{
-display: flexbox;
+.basic-1 .container .col-lg-7s {
+  display: flexbox;
 }
 .basic-1 h2 {
   margin-bottom: 1.375rem;
@@ -929,8 +929,8 @@ display: flexbox;
   overflow: hidden;
   border-radius: 0.25rem;
   width: 250px;
- align-items: center;
- justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .basic-1 .image-container img {
@@ -952,11 +952,11 @@ display: flexbox;
 /* LISTA DE INICIO*/
 .basic-1 .list-unstyled {
   margin-bottom: 1.5rem;
-  color: #787976;
+  color: #ffffff;
 }
 
 .basic-1 .list-unstyled .fas {
-  color: #04229b;
+  color: #c46403;
   font-size: 0.5rem;
   line-height: 1.375rem;
 }
@@ -971,13 +971,7 @@ display: flexbox;
 .cards-1 {
   padding-top: 3rem;
   padding-bottom: 2.875rem;
-  background-image: radial-gradient(
-    circle at 50% -20.71%,
-    #dcae1553 10%,
-    #5767df63 40.67%,
-    #dbbc4254 65.33%,
-    #1531cd52 100%
-  );
+  background: radial-gradient(circle, #e9e5e5, #c5c1b9, #ebeb08, #5a5af2);
 }
 
 .cards-1 .card {
@@ -1030,8 +1024,10 @@ display: flexbox;
 /*     07. Services     */
 /************************/
 .cards-2 {
-  padding-top: 6.625rem;
-  padding-bottom: 2.25rem;
+  display: flex;
+  justify-content: space-between; /* Espacio uniforme entre los bloques */
+  align-items: center;          /* Alineación vertical al centro */
+  padding: 10px;
 
   background-image: radial-gradient(
     circle at 50% -20.71%,
@@ -1040,7 +1036,7 @@ display: flexbox;
     #e7e9f2 83.33%,
     #e7e8ee 100%
   );
- 
+  
 }
 
 .cards-2 .section-title {
@@ -1101,7 +1097,6 @@ display: flexbox;
 
 .cards-2 .list-unstyled .media-body {
   margin-left: 0.625rem;
-
 }
 
 .cards-2 .price {
@@ -1337,12 +1332,12 @@ display: flexbox;
 .counter {
   padding-top: 6.875rem;
   padding-bottom: 5.25rem;
-  background-image: radial-gradient(
-    circle at 50% -20.71%,
+  background: linear-gradient(
+    to bottom,
     #ffffff 0%,
-    #ffffff 66.67%,
-    #ffffff 83.33%,
-    #1736e361 100%
+    #ffffff 25%,
+    #ffffff 85%,
+    #ffffffd6 100%
   );
 }
 
@@ -1755,17 +1750,51 @@ a:hover.back-to-top {
 
 /* Hover Animation */
 .ex-basic-2 .image-container1 {
-  width: 200x;
+  width: 100%;
+  height: 450px;
   overflow: hidden;
   border-radius: 0.25rem;
   padding-right: 20px;
 }
+.ex-basic-2 .image-container2{
+  width: 100vh;
+  height: 90%;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 0.25rem;
+  padding-right: 20px;
+  transition: all 0.5s ease-in-out;
+}
 
+.ex-basic-2 .image-container2:hover img {
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1.1);
+  transition:  all 0.5s ease ; 
+}
+.ex-basic-2 .image-container3{
+  width: 100vh;
+  height: 80%;
+  overflow: hidden;
+  padding: 0;
+    margin: 0;
+  border-radius: 0.25rem;
+  padding-right: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+.ex-basic-2 .image-container3:hover img {
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1.1);
+  transition:  all 0.5s ease ; 
+  margin: 0;
+}
 .ex-basic-2 .image-container1 img {
   width: 650px;
   margin: 0;
   border-radius: 0.25rem;
-  transition: all 0.3s;
+ 
 }
 
 .ex-basic-2 .image-container1:hover img {
@@ -1858,7 +1887,6 @@ a:hover.back-to-top {
     border-top: 0.75rem solid rgba(20, 66, 191, 0.082);
     border-radius: 25px;
     box-shadow: 0 0.25rem 0.375rem 0 rgba(17, 60, 215, 0.068);
-	
   }
 
   .navbar-custom.top-nav-collapse .dropdown-menu {
@@ -2095,8 +2123,8 @@ a:hover.back-to-top {
   .cards-2 .col-lg-12 div.card:nth-child(3n + 2) {
     margin-right: 1.25rem;
     margin-left: 1.25rem;
-	align-items: center;
-	justify-self: center;
+    align-items: center;
+    justify-self: center;
   }
 
   /* end of services */
