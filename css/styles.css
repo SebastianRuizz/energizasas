@@ -971,7 +971,7 @@ p,
 .cards-1 {
   padding-top: 3rem;
   padding-bottom: 2.875rem;
-  background: radial-gradient(circle, #e9e5e5, #c5c1b9, #ebeb08, #5a5af2);
+  background: radial-gradient(circle, #ffffff, #ffffff, #d5d552a5, #3131fd86);
 }
 
 .cards-1 .card {
