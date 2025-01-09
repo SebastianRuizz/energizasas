@@ -430,7 +430,7 @@ input[type="checkbox"] {
 }
 
 .help-block.with-errors .list-unstyled {
-  color: #0c46ba;
+  color: #c77004;
   font-size: 0.75rem;
   line-height: 1.125rem;
   text-align: left;
@@ -1090,7 +1090,7 @@ p,
 
 .cards-2 .list-unstyled .fas {
   /*color puntos servicios*/
-  color: #f92b2b;
+  color: #c88a02;
   font-size: 0.5rem;
   line-height: 1.375rem;
 }
@@ -1106,9 +1106,7 @@ p,
   text-align: center;
 }
 
-.cards-2 .price span {
-  color: #14bf98;
-}
+
 
 .cards-2 .button-container {
   margin-top: -1.375rem;
@@ -1116,7 +1114,8 @@ p,
 }
 
 .cards-2 .btn-solid-reg:hover {
-  background-color: #fff;
+  background-color: #ecc92d;
+  color: #000;
 }
 
 /****************************/
@@ -1364,7 +1363,7 @@ p,
 }
 
 .counter .list-unstyled .fas {
-  color: #1900ff;
+  color: #ff9d00;
   font-size: 0.5rem;
   line-height: 1.375rem;
 
