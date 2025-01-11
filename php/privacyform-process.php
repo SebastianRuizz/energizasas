@@ -26,7 +26,7 @@ if (empty($_POST["terms"])) {
 }
 
 $EmailTo = "recursoshumanos.energiza@gmail.com";
-$Subject = "Informacion solicitada desde pagina Web";
+$Subject = "Informacion solicita desde Pagina Web";
 
 // prepare email body text
 $Body = "";
