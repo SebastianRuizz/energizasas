@@ -344,6 +344,7 @@ select::-ms-expand {
   /* removes the ugly default down arrow on select form field in IE11 */
 }
 
+
 .form-control-textarea {
   display: block;
   /* used to eliminate a bottom gap difference between Chrome and IE/FF */
@@ -721,7 +722,8 @@ input[type="checkbox"] {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-  width: 10rem;
+  width: 12rem;
+  height: 80px;
   -webkit-backface-visibility: hidden;
 }
 
@@ -740,14 +742,14 @@ input[type="checkbox"] {
 
 .navbar-custom .nav-item .nav-link {
   padding: 0.625rem 0.75rem 0.625rem 0.75rem;
-  color: #faf9f9;
+  color: #fcfcfc;
   text-decoration: none;
   transition: all 0.2s ease;
 }
 
 .navbar-custom .nav-item .nav-link:hover,
 .navbar-custom .nav-item .nav-link.active {
-  color: #b9a80d;
+  color: #398de2;
 }
 
 /* Dropdown Menu */
@@ -778,17 +780,20 @@ input[type="checkbox"] {
   margin-top: 0;
   border: none;
   border-radius: 0.25rem;
-  background-color: #bfa50fd9;
+  background-color: #fffffff9;
 }
 
 .navbar-custom .dropdown-item {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
 }
-
+.navbar-custom .navbar-toggler .nav-item .nav-link{
+  color: #000000;
+}
 .navbar-custom .dropdown-item:hover {
-  background-color: #cd9c0a;
-  transition: 0.2s all ease-in-out;
+  background-color: #205ad899;
+  border-radius: 25px;
+  transition: 0.35s all ease-in-out;
 }
 
 .navbar-custom .dropdown-item .item-text {
@@ -919,8 +924,8 @@ p,
   display: flexbox;
 }
 .col-lg-7 video{
-  width: 100%;
-  height: 65vh;
+  width: 110%;
+  height: 75vh;
 }
 .basic-1 h2 {
   margin-bottom: 1.375rem;
@@ -977,7 +982,7 @@ p,
 .cards-1 {
   padding-top: 3rem;
   padding-bottom: 2.875rem;
-  background: radial-gradient(circle, #ffffff, #ffffff, #d5d552a5, #3131fd86);
+  background: radial-gradient(circle, #ffffff, #ffffff, #4b8be6a5, #3131fd);
 }
 
 .cards-1 .card {
@@ -1656,16 +1661,50 @@ a:hover.back-to-top {
   padding-top: 8rem;
   padding-bottom: 5rem;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url("../images/header-background-2.jpeg") center center no-repeat;
+    url("../images/header-background.jpg") center center no-repeat;
   background-size: cover;
   text-align: center;
+  height: 100vh;
+}
+.ex-header1  {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url("../images/header-background3.jpg") center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+}
+.ex-header2  {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url("../images/header-background-2.jpg") center center no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
 }
 
 .ex-header h1 {
+  justify-content: center;
+  padding-top: 18%;
   color: #fff;
   font-size: 20px;
 }
-
+.ex-header1 h1 {
+  justify-content: center;
+  padding-top: 18%;
+  align-items: center;
+  color: #fff;
+  font-size: 35px;
+}
+.ex-header2 h1 {
+  justify-content: center;
+  padding-top: 18%;
+  align-items: center;
+  color: #fff;
+  font-size: 35px;
+}
 .ex-basic-1 {
   padding-top: 2rem;
   padding-bottom: 0.875rem;
@@ -1709,7 +1748,7 @@ a:hover.back-to-top {
 
 .ex-basic-2 .list-unstyled .fas {
   /*COLOR DOMITCA*/
-  color: #d50f23;
+  color: #0c48ee;
   font-size: 0.5rem;
   line-height: 1.375rem;
   text-align: justify;
@@ -1827,8 +1866,8 @@ a:hover.back-to-top {
 /*****************************/
 /*     21. Media Queries     */
 /*****************************/
-/* Min-width width 768px */
-@media (min-width: 768px) {
+/* Min-width width 767px */
+@media (min-width: 767px) {
   /* General Styles */
   .p-heading {
     width: 85%;
@@ -1858,10 +1897,18 @@ a:hover.back-to-top {
   .navbar-custom .nav-item .nav-link {
     padding: 0.25rem 0.75rem 0.25rem 0.75rem;
   }
-
+  .navbar-custom .nav-item .fa-instagram {
+    color: #ba3d3d;
+  }
+  .navbar-custom .nav-item .fa-whatsapp {
+    color: #447b23f7;
+  }
+  .navbar-custom .nav-item .fa-facebook-f {
+    color: #0758db;
+  }
   .navbar-custom .nav-item .nav-link:hover,
   .navbar-custom .nav-item .nav-link.active {
-    color: #f9f9f9;
+    color: #346adf;
     /* COLOR LETRAS DE BARRA*/
   }
 
@@ -1872,18 +1919,16 @@ a:hover.back-to-top {
     /* COLOR BARRA */
   }
 
-  .navbar-custom.top-nav-collapse .navbar-brand.logo-text {
-    color: #0c0c0c;
-  }
+ 
 
   .navbar-custom.top-nav-collapse .nav-item .nav-link {
-    color: #111111;
+    color: #171718;
     /* COLOR BARRA NEGRA LETRAS*/
   }
 
   .navbar-custom.top-nav-collapse .nav-item .nav-link:hover,
   .navbar-custom.top-nav-collapse .nav-item .nav-link.active {
-    color: #1c1c1c;
+    color: #0a0ede;
   }
 
   .navbar-custom .dropdown-menu {
@@ -1895,7 +1940,7 @@ a:hover.back-to-top {
   }
 
   .navbar-custom.top-nav-collapse .dropdown-menu {
-    border-top: 0.125rem solid rgba(33, 125, 218, 0.74);
+    border-top: 0.125rem solid rgb(219, 135, 10);
     color: #000;
   }
 
@@ -2015,7 +2060,19 @@ a:hover.back-to-top {
     display: block;
   }
 }
-
+@media only screen and (max-width: 767px) {
+  /* Tus estilos específicos para móviles */
+  body {
+      font-size: 16px;
+      background-color: lightblue;
+  }
+  .navbar-custom .nav-item .nav-link {
+    padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+    color: #080808;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+}
 /* end of min-width width 768px */
 
 /* Min-width width 992px */
